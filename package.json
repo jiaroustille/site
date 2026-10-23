@@ -1,0 +1,28 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "srv": "eleventy --serve --quiet",
+    "lint": "eslint . --fix",
+    "build": "eleventy",
+    "clean": "node -e \"require('node:fs').rmSync('_site',{recursive:true,force:true})\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiaroustille/site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiaroustille/site/issues"
+  },
+  "homepage": "https://github.com/jiaroustille/site#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0"
+  }
+}
